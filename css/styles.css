@@ -6,7 +6,7 @@
   --espacamento: 20px;
   --fonte: Arial, sans-serif;
 }
-
+@import url(cabecalho.css);
 * {
   margin: 0;
   padding: 0;
