@@ -1,42 +1,116 @@
-.cabecalho_nav-list {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(5, auto) 0 25px auto; 
-    list-style-type: none;
-    margin-left: 5%;
-    margin-right: 10%;
+.cabecalho {
+    width: 100%;
     background-color: var(--cor-de-fundo);
+}
 
+.cabecalho_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    min-height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.cabecalho_nav-list-item {
-    align-self: center;
+
+.logo {
+    width: 143px;
+    height: auto;
 }
+
+.cabecalho_nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .links {
     text-decoration: none;
     color: var(--cor-texto);
-    font-family: var(--fonte-texto);
-    font-size: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: 18px;
+    font-weight: 600;
 }
+
 .links:hover {
     color: var(--cor-texto-hover);
 }
-.cabecalho_nav-list-input {
+
+.cabecalho_actions {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho_search {
     position: relative;
+}
+
+.cabecalho_search-input {
     background-color: rgb(224, 224, 224);
     border: none;
-    border-radius: 7.5px;
-    padding: 12px 40px 12px 16px;
-    width: 250px;
-    box-sizing: border-box; 
-}
-.cabecalho_nav-list-input::placeholder {
-    color: var(--cor-texto);
+    border-radius: 8px;
+    padding: 12px 42px 12px 16px;
+    width: 260px;
     font-family: var(--fonte-texto);
     font-size: 16px;
+    color: var(--cor-texto);
+    box-sizing: border-box;
 }
-.loc {
+
+.cabecalho_search-input::placeholder {
+    color: var(--cor-texto);
+    opacity: 0.8;
+}
+
+.cabecalho_search-icon {
     position: absolute;
-    right: 26%;
-    top: 5.5%;
+    right: 12px;
+    width: 18px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
     pointer-events: none;
+}
+
+.icon {
+    width: 22px;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .cabecalho_inner {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .cabecalho_nav {
+        gap: 24px;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .cabecalho_inner {
+        flex-direction: column;
+        align-items: stretch;
+        min-height: auto;
+        padding: 1rem;
+    }
+
+    .cabecalho_nav,
+    .cabecalho_actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho_search-input {
+        width: 100%;
+        max-width: 100%;
+    }
 }
