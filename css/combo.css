@@ -1,0 +1,35 @@
+.combo {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.combo-img {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.combo-container {
+  position: absolute;
+  top: 50%;
+  left: 23rem;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.combo-container-titulo {
+  margin: 0;
+  color: #fff;
+  font-family: var(--fonte-titulo);
+  font-size: 76px;
+}
+
+.combo-container-titulo span {
+  display: block;
+  color: var(--cor-texto-destaque);
+  font-size: var(--font-size-xxl);
+}

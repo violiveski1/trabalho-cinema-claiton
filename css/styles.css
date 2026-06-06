@@ -21,7 +21,10 @@
 @import url(cabecalho.css);
 @import url(banner.css);
 @import url(categorias.css);
-
+@import url(sobre.css);
+@import url(combo.css);
+@import url(newsletter.css);
+@import url(footer.css);
 :root {
     --cor-texto: #1e1e1e;
     --cor-texto-hover: #252530;
