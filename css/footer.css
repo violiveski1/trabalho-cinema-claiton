@@ -3,7 +3,7 @@
 }
 .ul_footer {
     display: grid;
-    grid-template-columns: 30% 30% 25% 15%;
+    grid-template-columns: 30% 30% 25% 20%;
     gap: var(--gap);
     padding-top: 4%;
     padding-bottom: 2.5%;
@@ -38,4 +38,13 @@
     width: 35px;
     height: auto;
     margin-right: 5px;
+}
+
+.trequinho{
+    bottom: 0;
+    background-color: var(--cor-de-fundo-footer);
+}
+.trequinho img{
+    width: 100%;
+    height: auto;
 }

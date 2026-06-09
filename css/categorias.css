@@ -82,6 +82,7 @@
     margin: 10px 10px 20%;
     font-weight: 700;
 }
+a{text-decoration: none;}
 
 .genero, 
 .duracao {
