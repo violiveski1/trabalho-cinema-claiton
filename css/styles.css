@@ -1,7 +1,8 @@
 
 
+
 /**
- *
+ * 
  * Precisamos padronizar os espaçamentos: https://nordhealth.design/tokens/#space
  * a ideia é padronizar espaçamentos, tamannhos de fonte, line height, tudo em variáveis - controlando as quantidade de variantes como se fosse a propria TVA e evitar tamanhos de fontes expalhados e desproporcionais 
  *
@@ -17,7 +18,7 @@
  * Faltou o flex-basis https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
  *
  */
- 
+@import url(filmes.css);
 @import url(cabecalho.css);
 @import url(banner.css);
 @import url(categorias.css);

@@ -1,0 +1,388 @@
+/* Estilos para páginas de filmes */
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Detalhes do Filme */
+.detalhe_filme {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detalhe_filme-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.img_filme-detalhe {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filme_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.titulo_filme-detalhe {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.genero_detalhe, .duracao_detalhe {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+    font-weight: normal;
+}
+
+.creditos_container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.creditos_texto {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.creditos_texto strong {
+    color: #333;
+}
+
+/* Trailer */
+.trailer_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.trailer_thumb {
+    position: relative;
+    width: 300px;
+    height: 169px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.trailer_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-image: url('../assets/play.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+
+.btn_trailer {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn_trailer:hover {
+    background-color: #555;
+}
+
+/* Sinopse */
+.sinopse {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.sinopse_titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sinopse_texto {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Sessões */
+.sessoes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.sessoes_titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.sessoes_filtros {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.form_sessao-data, .form_sessao-local {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input_sessao-data, .input_sessao-local {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.sessao_local-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.ul_salas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.li_salas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.sala_header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sala_titulo {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.classificacao_livre, .classificacao_10, .classificacao_12, .classificacao_14, .classificacao_16 {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.classificacao_livre {
+    background-color: #4CAF50;
+}
+
+.classificacao_10 {
+    background-color: #2196F3;
+}
+
+.classificacao_12 {
+    background-color: #FF9800;
+}
+
+.classificacao_14 {
+    background-color: #FF5722;
+}
+
+.classificacao_16 {
+    background-color: #F44336;
+}
+
+.dimencao, .dimencao_3d {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background-color: #666;
+}
+
+.dimencao_3d {
+    background-color: #3f51b5;
+}
+
+.sala_horarios {
+    display: flex;
+    gap: 10px;
+}
+
+.btn_horario {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Ajuste para horários como texto */
+.horario_texto {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    color: #333;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.btn_comprar {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s;
+}
+
+.btn_comprar:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+}
+
+.ul_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo_footer {
+    width: 150px;
+    height: auto;
+}
+
+.logo_texto {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer__list-titulo {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+}
+
+.footer__list-texto {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 0;
+    text-decoration: none;
+}
+
+.footer__list-texto:hover {
+    color: white;
+}
+
+.footer__list-icone {
+    width: 30px;
+    height: 30px;
+}
+
+.footer_creditos {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.faixa_decorativa {
+    height: 50px;
+    background: linear-gradient(90deg, #FFD700, #FF8C00, #FF4500, #FF69B4, #FF1493, #DA70D6);
+}
+
+@media (max-width: 768px) {
+    .detalhe_filme-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_filme-detalhe {
+        width: 200px;
+    }
+
+    .ul_footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
