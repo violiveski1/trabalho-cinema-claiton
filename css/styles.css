@@ -30,6 +30,8 @@
 @import url(combo.css);
 @import url(newsletter.css);
 @import url(footer.css);
+@import url(responsive/tablet.css);
+@import url(responsive/mobile.css);
 :root {
     --cor-texto: #1e1e1e;
     --cor-texto-hover: #252530;

@@ -1,0 +1,119 @@
+@media only screen and (max-width: 600px) {
+  /* Estilos para celulares */
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav li {
+    margin: 5px 0;
+  }
+
+  .banner-container {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90%, 360px);
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .banner-container-titulo {
+    font-size: 36px;
+    line-height: 1.05;
+  }
+  .banner-container-titulo span {
+    font-size: 2rem;
+  }
+
+  .ul_local {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin: 1.5rem auto;
+    width: min(90%, 360px);
+  }
+  .form_cat {
+    margin: 0 auto 1.5rem;
+    width: min(90%, 360px);
+  }
+  .input_cat {
+    width: 100%;
+    padding: 14px 3.5rem 14px 16px;
+  }
+  .cat_img {
+    right: 4%;
+  }
+  .titulo_cat {
+    font-size: 32px;
+    margin: 0 auto 1rem;
+    width: min(90%, 360px);
+  }
+  .ul_filmes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 0 auto 3rem;
+    width: min(90%, 360px);
+  }
+  .li_filmes {
+    box-shadow: var(--box-shadow-card);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .img_filme {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .titulo_filme {
+    font-size: 18px;
+    margin: 10px 10px 12px;
+  }
+  .genero,
+  .duracao {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .dimencao,
+  .classificacao_12,
+  .classificacao_14,
+  .classificacao_10,
+  .classificacao_livre {
+    margin-left: 0;
+    justify-self: start;
+  }
+  .container_cat {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 0.5rem;
+  }
+  .container_cat .dimencao,
+  .container_cat .classificacao_12,
+  .container_cat .classificacao_14,
+  .container_cat .classificacao_10,
+  .container_cat .classificacao_livre {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 0;
+  }
+}
