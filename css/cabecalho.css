@@ -28,7 +28,7 @@
 .links {
     text-decoration: none;
     color: var(--cor-texto);
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte-texto);
     font-size: 18px;
     font-weight: 600;
 }
