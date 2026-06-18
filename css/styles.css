@@ -98,3 +98,20 @@
     font-size: 16px;
 }
 
+.btn-play {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-play:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+

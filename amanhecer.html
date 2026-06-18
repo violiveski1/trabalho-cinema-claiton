@@ -4,39 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luz & Cena - Amanhecer</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
 <header class="cabecalho">
     <div class="cabecalho_inner">
-    <a href="./index.html"><img src="./assets/Logo.svg" class="logo" alt="Logo Luz & Cena">      <button type="button" class="cabecalho_toggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <a href="./index.html"><img src="./assets/Logo.svg" class="logo" alt="Logo Luz & Cena"></a>
 
-    <nav class="cabecalho_nav">
+    <div class="cabecalho_actions">
+        <img src="./assets/Carrinho.svg" class="icon" alt="Carrinho">
+        <img src="./assets/Perfil.svg" class="icon" alt="Perfil">
+    </div>
+
+    <nav class="cabecalho_nav" id="navbarNav">
         <a href="#" class="links">Eventos</a>
         <a href="#" class="links">Club fidelidade</a>
         <a href="#" class="links">Sobre nós</a>
     </nav>
 
-    <div class="cabecalho_actions">
-        <form class="cabecalho_search">
+    <form class="cabecalho_search">
         <input type="search" class="cabecalho_search-input" placeholder="São José dos Campos">
         <img src="./assets/location_on.svg" class="cabecalho_search-icon" alt="Localização">
-        </form>
-        <img src="./assets/Carrinho.svg" class="icon" alt="Carrinho">
-        <img src="./assets/Perfil.svg" class="icon" alt="Perfil">
-    </div>
+    </form>
     </div>
 </header>
 
 <main>
     <section class="banner">
-    <img class="banner-imagem" src="./assets/poster/bannerAmanhecer.png" alt="Banner Amanhecer">
+    <img class="banner-imagem" src="./assets/banner_filmes/banner_onexus.png" alt="Banner Amanhecer">
     </section>
 
     <section class="detalhe_filme">
@@ -57,7 +59,7 @@
 
         <div class="trailer_container">
         <div class="trailer_thumb">
-            <img src="./assets/trailer-thumb.png" alt="Preview do Trailer" class="trailer_img">
+            <img src="./assets/thumbnail_trailers/thumb_onexus.png" alt="Preview do Trailer" class="trailer_img">
             <button class="btn_play" aria-label="Dar play no trailer"></button>
         </div>
         <button class="btn_trailer">Assistir trailer</button>
@@ -151,6 +153,31 @@
 
 
 </footer>
-  <script src="./modal.js"></script>
+
+<!-- Modal Bootstrap -->
+<div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="trailerModalLabel">Trailer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <img src="" alt="Trailer" class="img-fluid" id="trailerModalImage" style="object-fit: cover; width: 100%; height: 100%;">
+          <button type="button" class="btn btn-play" id="btnPlayTrailer" aria-label="Reproduzir trailer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" viewBox="0 0 16 16" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./modal.js"></script>
 </body>
 </html>

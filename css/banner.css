@@ -1,14 +1,12 @@
 .banner {
   position: relative;
-  width: 100%;
-  max-width: 100vw;
   overflow: hidden;
+  height: 100%;
 }
 
 .banner-imagem {
   width: 100%;
-  max-width: 100vw;
-  height: auto;
+  height: 100%;
   display: block;
   margin: 0;
 }
@@ -32,4 +30,37 @@
   display: block;
   color: var(--cor-texto-destaque);
   font-size: var(--font-size-xxl);
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .banner-container-titulo {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .banner-container-titulo span {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    top: 25%;
+  }
+
+  .banner-container-titulo {
+    font-size: 28px;
+  }
+
+  .banner-container-titulo span {
+    font-size: 24px;
+  }
 }

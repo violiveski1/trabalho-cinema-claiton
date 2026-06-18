@@ -77,7 +77,7 @@
 }
 
 .titulo_filme {
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte-texto);
     font-size: 20px;
     color: var(--cor-texto);
     margin: 10px 10px 20%;
@@ -176,4 +176,102 @@ a{text-decoration: none;}
 
 .li_filmes {
     box-shadow: var(--box-shadow-card);
+}
+
+@media (max-width: 768px) {
+    .ul_local {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .local,
+    .local_breve {
+        font-size: 18px;
+    }
+
+    .form_cat {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .input_cat {
+        padding: 14px 50px 14px 16px;
+        width: 100%;
+    }
+
+    .cat_img {
+        right: 5%;
+    }
+
+    .titulo_cat {
+        font-size: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .ul_filmes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .titulo_filme {
+        font-size: 18px;
+        margin: 10px 10px 12px;
+    }
+
+    .genero,
+    .duracao {
+        font-size: 14px;
+    }
+
+    .dimencao,
+    .dimencao_gamb,
+    .dimencao_3d {
+        margin-left: auto;
+    }
+
+    .classificacao_12,
+    .classificacao_14,
+    .classificacao_10,
+    .classificacao_livre {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .ul_local {
+        grid-template-columns: 1fr;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .form_cat {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .titulo_cat {
+        font-size: 32px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .ul_filmes {
+        grid-template-columns: 1fr;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .titulo_filme {
+        font-size: 16px;
+    }
+
+    .genero,
+    .duracao {
+        font-size: 13px;
+    }
 }

@@ -318,6 +318,112 @@
     gap: 20px;
 }
 
+@media (max-width: 1024px) {
+    .ul_salas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sessoes {
+        padding: 30px 1rem;
+    }
+
+    .sessoes_titulo {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .sessoes_filtros {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 1.5rem;
+    }
+
+    .input_sessao-data,
+    .input_sessao-local {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 42px 10px 16px;
+    }
+
+    .ul_salas {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .li_salas {
+        padding: 16px;
+    }
+
+    .sala_header {
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .sala_titulo {
+        font-size: 18px;
+        grid-column: 1 / -1;
+    }
+
+    .sala_horarios-compras {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sala_horarios {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .btn_horario {
+        flex: 1;
+        min-width: 80px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .btn_comprar {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sessoes {
+        padding: 20px 0.75rem;
+    }
+
+    .sessoes_titulo {
+        font-size: 20px;
+    }
+
+    .input_sessao-data,
+    .input_sessao-local {
+        font-size: 13px;
+        padding: 10px 38px 10px 14px;
+    }
+
+    .li_salas {
+        padding: 12px;
+    }
+
+    .sala_titulo {
+        font-size: 16px;
+    }
+
+    .btn_horario {
+        min-width: 70px;
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
 .li_salas {
     background-color: rgb(224, 224, 224);
     border-radius: 8px;
@@ -485,13 +591,29 @@
     .detalhe_filme-container {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
     .img_filme-detalhe {
-        width: 160px;
+        width: 180px;
+    }
+    .titulo_filme-detalhe {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .genero_detalhe,
+    .duracao_detalhe {
+        font-size: 16px;
+        text-align: center;
+    }
+    .creditos_container {
+        margin-top: 1rem;
+        text-align: center;
     }
     .trailer_container {
         width: 100%;
         align-items: center;
+        margin-top: 1rem;
     }
     .trailer_thumb {
         width: 100%;
@@ -507,6 +629,8 @@
     .btn_trailer {
         padding: 10px 18px;
         font-size: 15px;
+        width: 100%;
+        max-width: 300px;
     }
     .trailer-modal__box {
         width: 95%;
@@ -540,5 +664,25 @@
         height: 22px;
         border-width: 11px 0 11px 18px;
         margin-left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .detalhe_filme {
+        padding: 12px 1rem;
+    }
+    .img_filme-detalhe {
+        width: 140px;
+    }
+    .titulo_filme-detalhe {
+        font-size: 24px;
+    }
+    .genero_detalhe,
+    .duracao_detalhe {
+        font-size: 14px;
+    }
+    .creditos_texto,
+    .creditos_texto strong {
+        font-size: 14px;
     }
 }

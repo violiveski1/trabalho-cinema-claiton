@@ -33,3 +33,36 @@
   color: var(--cor-texto-destaque);
   font-size: var(--font-size-xxl);
 }
+
+@media (max-width: 768px) {
+  .combo-container {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .combo-container-titulo {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .combo-container-titulo span {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .combo-container {
+    top: 25%;
+  }
+
+  .combo-container-titulo {
+    font-size: 28px;
+  }
+
+  .combo-container-titulo span {
+    font-size: 24px;
+  }
+}

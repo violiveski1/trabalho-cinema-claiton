@@ -57,3 +57,43 @@
 .newsletter-button:hover{
     background-color: var(--cor-texto-destaque);
 }
+
+@media (max-width: 768px) {
+    .newsletter-titulo {
+        font-size: 24px;
+        padding: var(--padding-l);
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        padding: 0 var(--padding-l) var(--padding-xl);
+        align-items: center;
+    }
+
+    .newsletter-input {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .newsletter-button {
+        width: 90%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-titulo {
+        font-size: 20px;
+        padding: var(--padding-m);
+    }
+
+    .newsletter-input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .newsletter-button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
