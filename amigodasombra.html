@@ -1,197 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luz & Cena - Amigo da Sombra</title>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luz & Cena - Amigo da Sombra</title>
 
-<header class="cabecalho">
-    <div class="cabecalho_inner">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <a href="./index.html"><img src="./assets/Logo.svg" class="logo" alt="Logo Luz & Cena"></a>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalho_inner">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="cabecalho_actions">
-        <img src="./assets/Carrinho.svg" class="icon" alt="Carrinho">
-        <img src="./assets/Perfil.svg" class="icon" alt="Perfil">
-    </div>
+        <a href="./index.html"
+          ><img src="./assets/Logo.svg" class="logo" alt="Logo Luz & Cena"
+        /></a>
 
-    <nav class="cabecalho_nav" id="navbarNav">
-        <a href="#" class="links">Eventos</a>
-        <a href="#" class="links">Club fidelidade</a>
-        <a href="#" class="links">Sobre nós</a>
-    </nav>
-
-    <form class="cabecalho_search">
-        <input type="search" class="cabecalho_search-input" placeholder="São José dos Campos">
-        <img src="./assets/location_on.svg" class="cabecalho_search-icon" alt="Localização">
-    </form>
-    </div>
-</header>
-
-<main>
-    <section class="banner">
-    <img class="banner-imagem" src="./assets/banner_filmes/banner_onexus.png" alt="Banner Amigo da Sombra">
-    </section>
-
-    <section class="detalhe_filme">
-    <div class="detalhe_filme-container">
-        
-        <img src="./assets/poster/amigoDaSombra.png" class="img_filme-detalhe" alt="Amigo da Sombra">
-
-        <div class="filme_info">
-        <h1 class="titulo_filme-detalhe">Amigo da Sombra</h1>
-        <h4 class="genero_detalhe">Animação</h4>
-        <h4 class="duracao_detalhe">90 minutos</h4>
-
-        <div class="creditos_container">
-            <p class="creditos_texto"><strong>Direção:</strong> Carlos Manga</p>
-            <p class="creditos_texto"><strong>Elenco:</strong> Dubladores: Sérgio Stern, Miriam Ficher, Marcos Souza</p>
-        </div>
+        <div class="cabecalho_actions">
+          <img src="./assets/Carrinho.svg" class="icon" alt="Carrinho" />
+          <img src="./assets/Perfil.svg" class="icon" alt="Perfil" />
         </div>
 
-        <div class="trailer_container">
-        <div class="trailer_thumb">
-            <img src="./assets/thumbnail_trailers/thumb_onexus.png" alt="Preview do Trailer" class="trailer_img">
-            <button class="btn_play" aria-label="Dar play no trailer"></button>
-        </div>
-        <button class="btn_trailer">Assistir trailer</button>
-        </div>
+        <nav class="cabecalho_nav" id="navbarNav">
+          <a href="#" class="links">Eventos</a>
+          <a href="#" class="links">Club fidelidade</a>
+          <a href="#" class="links">Sobre nós</a>
+        </nav>
 
-    </div>
-    </section>
-
-    <section class="sinopse">
-    <h2 class="sinopse_titulo">Sinopse</h2>
-    <p class="sinopse_texto">
-        Um garoto solitário descobre uma criatura misteriosa que vive nas sombras do seu quarto. Inicialmente assustado, ele percebe que a criatura é amigável e pode se comunicar com ele. Juntos, eles vivem aventuras mágicas, explorando um mundo oculto atrás das sombras. Mas quando um cientista maluco ameaça capturar a criatura para estudá-la, o garoto precisa protegê-la e provar que a amizade verdadeira não conhece limites.
-    </p>
-    </section>
-
-    <section class="sessoes">
-    <h2 class="sessoes_titulo">Próximas Sessões</h2>
-
-    <div class="sessoes_filtros">
-        <form class="form_sessao-data">
-        <input type="date" value="2024-08-20" class="input_sessao-data">
+        <form class="cabecalho_search">
+          <input
+            type="search"
+            class="cabecalho_search-input"
+            placeholder="São José dos Campos"
+          />
+          <img
+            src="./assets/location_on.svg"
+            class="cabecalho_search-icon"
+            alt="Localização"
+          />
         </form>
-        <form class="form_sessao-local">
-        <input type="text" placeholder="São José dos Campos" class="input_sessao-local">
-        <img src="./assets/location_on.svg" class="sessao_local-icon" alt="Localização">
-        </form>
-    </div>
+      </div>
+    </header>
 
-    <ul class="ul_salas">
-        <li class="li_salas">
-        <div class="sala_header">
-            <h3 class="sala_titulo">Sala 1</h3>
-            <aside class="classificacoes_livre">Livre</aside>
-            <aside class="dimencoes">2D</aside>
+    <main>
+      <section class="banner">
+        <img
+          class="banner-imagem"
+          src="./assets/banner_filmes/banner_onexus.png"
+          alt="Banner Amigo da Sombra"
+        />
+      </section>
+
+      <section class="detalhe_filme">
+        <div class="detalhe_filme-container">
+          <img
+            src="./assets/poster/amigoDaSombra.png"
+            class="img_filme-detalhe"
+            alt="Amigo da Sombra"
+          />
+
+          <div class="filme_info">
+            <h1 class="titulo_filme-detalhe">Amigo da Sombra</h1>
+            <h4 class="genero_detalhe">Animação</h4>
+            <h4 class="duracao_detalhe">90 minutos</h4>
+
+            <div class="creditos_container">
+              <p class="creditos_texto">
+                <strong>Direção:</strong> Carlos Manga
+              </p>
+              <p class="creditos_texto">
+                <strong>Elenco:</strong> Dubladores: Sérgio Stern, Miriam
+                Ficher, Marcos Souza
+              </p>
+            </div>
+          </div>
+
+          <div class="trailer_container">
+            <div class="trailer_thumb">
+              <img
+                src="./assets/thumbnail_trailers/thumb_onexus.png"
+                alt="Preview do Trailer"
+                class="trailer_img"
+              />
+              <button
+                class="btn_play"
+                aria-label="Dar play no trailer"
+              ></button>
+            </div>
+            <button class="btn_trailer">Assistir trailer</button>
+          </div>
         </div>
-        <div class="sala_horarios-compras">
-            <div class="sala_horarios">
+      </section>
+
+      <section class="sinopse">
+        <h2 class="sinopse_titulo">Sinopse</h2>
+        <p class="sinopse_texto">
+          Um garoto solitário descobre uma criatura misteriosa que vive nas
+          sombras do seu quarto. Inicialmente assustado, ele percebe que a
+          criatura é amigável e pode se comunicar com ele. Juntos, eles vivem
+          aventuras mágicas, explorando um mundo oculto atrás das sombras. Mas
+          quando um cientista maluco ameaça capturar a criatura para estudá-la,
+          o garoto precisa protegê-la e provar que a amizade verdadeira não
+          conhece limites.
+        </p>
+      </section>
+
+      <section class="sessoes">
+        <h2 class="sessoes_titulo">Próximas Sessões</h2>
+
+        <div class="sessoes_filtros">
+          <form class="form_sessao-data">
+            <input type="date" value="2024-08-20" class="input_sessao-data" />
+          </form>
+          <form class="form_sessao-local">
+            <input
+              type="text"
+              placeholder="São José dos Campos"
+              class="input_sessao-local"
+            />
+            <img
+              src="./assets/location_on.svg"
+              class="sessao_local-icon"
+              alt="Localização"
+            />
+          </form>
+        </div>
+
+        <ul class="ul_salas">
+          <li class="li_salas">
+            <div class="sala_header">
+              <h3 class="sala_titulo">Sala 1</h3>
+              <aside class="classificacoes_livre">Livre</aside>
+              <aside class="dimencoes">2D</aside>
+            </div>
+            <div class="sala_horarios-compras">
+              <div class="sala_horarios">
                 <button class="btn_horario">14:30</button>
                 <button class="btn_horario">17:00</button>
+              </div>
+              <button class="btn_comprar">Comprar</button>
             </div>
-            <button class="btn_comprar">Comprar</button>
-        </div>
-        </li>
+          </li>
 
-        <li class="li_salas">
-        <div class="sala_header">
-            <h3 class="sala_titulo">Sala 3</h3>
-            <aside class="classificacoes_livre">Livre</aside>
-            <aside class="dimencoes">2D</aside>
-        </div>
-        <div class="sala_horarios-compras">
-            <div class="sala_horarios">
+          <li class="li_salas">
+            <div class="sala_header">
+              <h3 class="sala_titulo">Sala 3</h3>
+              <aside class="classificacoes_livre">Livre</aside>
+              <aside class="dimencoes">2D</aside>
+            </div>
+            <div class="sala_horarios-compras">
+              <div class="sala_horarios">
                 <button class="btn_horario">15:45</button>
+              </div>
+              <button class="btn_comprar">Comprar</button>
             </div>
-            <button class="btn_comprar">Comprar</button>
-        </div>
-        </li>
+          </li>
 
-        <li class="li_salas">
-        <div class="sala_header">
-            <h3 class="sala_titulo">Sala 7</h3>
-            <aside class="classificacoes_livre">Livre</aside>
-            <aside class="dimencoes_3d">3D</aside>
-        </div>
-        <div class="sala_horarios-compras">
-            <div class="sala_horarios">
+          <li class="li_salas">
+            <div class="sala_header">
+              <h3 class="sala_titulo">Sala 7</h3>
+              <aside class="classificacoes_livre">Livre</aside>
+              <aside class="dimencoes_3d">3D</aside>
+            </div>
+            <div class="sala_horarios-compras">
+              <div class="sala_horarios">
                 <button class="btn_horario">15:45</button>
+              </div>
+              <button class="btn_comprar">Comprar</button>
             </div>
-            <button class="btn_comprar">Comprar</button>
-        </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="faixa_decorativa"></div>
+
+    <footer class="footer">
+      <ul class="ul_footer">
+        <li class="footer__list">
+          <img src="./assets/Logo-white.svg" alt="Logo" class="logo_footer" />
+          <p class="logo_texto">Onde a realidade encontra</p>
+          <p class="logo_texto">a fantasia!</p>
         </li>
-    </ul>
-    </section>
-</main>
+        <li class="footer__list">
+          <h3 class="footer__list-titulo">Funcionamento</h3>
+          <p class="footer__list-texto">Segunda a sexta – 16h às 00h</p>
+          <p class="footer__list-texto">ola@luzecena.com.br</p>
+          <p class="footer__list-texto">0800 541 320</p>
+        </li>
+        <li class="footer__list">
+          <h3 class="footer__list-titulo">Institucional</h3>
+          <p class="footer__list-texto">Sobre nós</p>
+          <p class="footer__list-texto">Para empresas</p>
+          <p class="footer__list-texto">Club fidelidade</p>
+        </li>
+        <li class="footer__list">
+          <h3 class="footer__list-titulo">Siga nossas redes:</h3>
+          <div class="footer__list-redes">
+            <img
+              src="./assets/Whatsapp.svg"
+              alt="WhatsApp"
+              class="footer__list-icone"
+            />
+            <img
+              src="./assets/Instagram.svg"
+              alt="Instagram"
+              class="footer__list-icone"
+            />
+            <img
+              src="./assets/Tiktok.svg"
+              alt="TikTok"
+              class="footer__list-icone"
+            />
+          </div>
+        </li>
+      </ul>
+    </footer>
 
-<div class="faixa_decorativa"></div>
 
-<footer class="footer">
-    <ul class="ul_footer">
-    <li class="footer__list">
-        <img src="./assets/Logo-white.svg" alt="Logo" class="logo_footer">
-        <p class="logo_texto">Onde a realidade encontra </p><p class="logo_texto">a fantasia!</p>
-    </li>
-    <li class="footer__list">
-        <h3 class="footer__list-titulo">Funcionamento</h3>
-        <p class="footer__list-texto">Segunda a sexta – 16h às 00h</p>
-        <p class="footer__list-texto">ola@luzecena.com.br</p>
-        <p class="footer__list-texto">0800 541 320</p>
-    </li>
-    <li class="footer__list">
-        <h3 class="footer__list-titulo">Institucional</h3>
-        <p class="footer__list-texto">Sobre nós</p>
-        <p class="footer__list-texto">Para empresas</p>
-        <p class="footer__list-texto">Club fidelidade</p>
-    </li>
-    <li class="footer__list">
-        <h3 class="footer__list-titulo">Siga nossas redes:</h3>
-        <div class="footer__list-redes">
-        <img src="./assets/Whatsapp.svg" alt="WhatsApp" class="footer__list-icone">
-        <img src="./assets/Instagram.svg" alt="Instagram" class="footer__list-icone">
-        <img src="./assets/Tiktok.svg" alt="TikTok" class="footer__list-icone">
-        </div>
-    </li>
-    </ul>
-
-
-</footer>
-
-<!-- Modal Bootstrap -->
-<div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="trailerModalLabel">Trailer</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-      <div class="modal-body">
-        <div class="ratio ratio-16x9">
-          <img src="" alt="Trailer" class="img-fluid" id="trailerModalImage" style="object-fit: cover; width: 100%; height: 100%;">
-          <button type="button" class="btn btn-play" id="btnPlayTrailer" aria-label="Reproduzir trailer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" viewBox="0 0 16 16" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-              <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-            </svg>
-          </button>
+    <div
+      class="modal fade"
+      id="trailerModal"
+      tabindex="-1"
+      aria-labelledby="trailerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="trailerModalLabel">Trailer</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <img
+                src=""
+                alt="Trailer"
+                class="img-fluid"
+                id="trailerModalImage"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <button
+                type="button"
+                class="btn btn-play"
+                id="btnPlayTrailer"
+                aria-label="Reproduzir trailer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  fill="white"
+                  viewBox="0 0 16 16"
+                  style="
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  "
+                >
+                  <path
+                    d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./modal.js"></script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./modal.js"></script>
+  </body>
 </html>

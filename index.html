@@ -1,236 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luz & Cena</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luz & Cena</title>
+  
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalho_inner">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <header class="cabecalho">
-    <div class="cabecalho_inner">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <a href="./index.html"><img src="./assets/Logo.svg" class="logo" alt="Logo Luz & Cena"></a>
+        <a href="./index.html"
+          ><img src="./assets/Logo.svg" class="logo" alt="Logo Luz & Cena"
+        /></a>
 
-    <div class="cabecalho_actions">
-        <img src="./assets/Carrinho.svg" class="icon" alt="Carrinho">
-        <img src="./assets/Perfil.svg" class="icon" alt="Perfil">
-    </div>
+        <div class="cabecalho_actions">
+          <img src="./assets/Carrinho.svg" class="icon" alt="Carrinho" />
+          <img src="./assets/Perfil.svg" class="icon" alt="Perfil" />
+        </div>
 
-    <nav class="cabecalho_nav" id="navbarNav">
-        <a href="#" class="links">Eventos</a>
-        <a href="#" class="links">Club fidelidade</a>
-        <a href="#" class="links">Sobre nós</a>
-    </nav>
+        <nav class="cabecalho_nav" id="navbarNav">
+          <a href="#" class="links">Eventos</a>
+          <a href="#" class="links">Club fidelidade</a>
+          <a href="#" class="links">Sobre nós</a>
+        </nav>
 
-    <form class="cabecalho_search">
-        <input type="search" class="cabecalho_search-input" placeholder="São José dos Campos">
-        <img src="./assets/location_on.svg" class="cabecalho_search-icon" alt="Localização">
-    </form>
-    </div>
-  </header>
-
+        <form class="cabecalho_search">
+          <input
+            type="search"
+            class="cabecalho_search-input"
+            placeholder="São José dos Campos"
+          />
+          <img
+            src="./assets/location_on.svg"
+            class="cabecalho_search-icon"
+            alt="Localização"
+          />
+        </form>
+      </div>
+    </header>
 
     <section class="banner">
-<img
-        class="banner-imagem"
-        src="./assets/Banner.png"
-        alt="Banner"/>
+      <img class="banner-imagem" src="./assets/Banner.png" alt="Banner" />
 
       <div class="banner-container">
         <h2 class="banner-container-titulo">
-          Onde a <br>realidade <span>encontra a<br> fantasia</span>
+          Onde a <br />realidade
+          <span
+            >encontra a<br />
+            fantasia</span
+          >
         </h2>
       </div>
     </section>
 
     <section class="categorias">
       <ul class="ul_local">
-      <li>
-      <a href="index.html" class="local">Em cartaz</a>
-      <hr class="linha">
-      </li>
-      <li>
-      <h4 class="local_breve">Em breve</h4>
-      </li>
+        <li>
+          <a href="index.html" class="local">Em cartaz</a>
+          <hr class="linha" />
+        </li>
+        <li>
+          <h4 class="local_breve">Em breve</h4>
+        </li>
       </ul>
 
-
       <form class="form_cat">
-        <input type="search" placeholder="Digite sua busca" class="input_cat">
-        <img src="./assets/search.svg" class="cat_img">
+        <input type="search" placeholder="Digite sua busca" class="input_cat" />
+        <img src="./assets/search.svg" class="cat_img" />
       </form>
-
-
 
       <h2 class="titulo_cat">Em Cartaz</h2>
 
-
-
       <ul class="ul_filmes">
-
         <li class="li_filmes">
-        <a href="amigodasombra.html">
-          <img src="./assets/poster/amigoDaSombra.png" class="img_filme" alt="Amigo da Sombra">
-          <h3 class="titulo_filme">Amigo da Sombra</h3>
-        </a>
-        <div class="container_cat">
-          <h4 class="genero">Suspense</h4>
-          <aside class="dimencao">2D</aside>
-          <h4 class="duracao">110 minutos</h4>
-          <aside class="classificacao_12">12 anos</aside>
-        </div>
-
+          <a href="amigodasombra.html">
+            <img
+              src="./assets/poster/amigoDaSombra.png"
+              class="img_filme"
+              alt="Amigo da Sombra"
+            />
+            <h3 class="titulo_filme">Amigo da Sombra</h3>
+          </a>
+          <div class="container_cat">
+            <h4 class="genero">Suspense</h4>
+            <aside class="dimencao">2D</aside>
+            <h4 class="duracao">110 minutos</h4>
+            <aside class="classificacao_12">12 anos</aside>
+          </div>
         </li>
 
         <li class="li_filmes">
           <a href="amanhecer.html">
-          <img src="./assets/poster/amanhecer.png" class="img_filme" alt="Amanhecer">
-          <h3 class="titulo_filme">Amanhecer</h3>
+            <img
+              src="./assets/poster/amanhecer.png"
+              class="img_filme"
+              alt="Amanhecer"
+            />
+            <h3 class="titulo_filme">Amanhecer</h3>
           </a>
-        <div class="container_cat">
-          <h4 class="genero">Romance</h4>
-          <aside class="dimencao">2D</aside>
-          <h4 class="duracao">90 minutos</h4>
-          <aside class="classificacao_livre">Livre</aside>
-        </div>
+          <div class="container_cat">
+            <h4 class="genero">Romance</h4>
+            <aside class="dimencao">2D</aside>
+            <h4 class="duracao">90 minutos</h4>
+            <aside class="classificacao_livre">Livre</aside>
+          </div>
         </li>
 
         <li class="li_filmes">
           <a href="amigosdobosque.html">
-          <img src="./assets/poster/amigosDoBosque.png" class="img_filme" alt="Amigos do Bosque">
-          <h3 class="titulo_filme">Amigos do Bosque Mágico</h3>
+            <img
+              src="./assets/poster/amigosDoBosque.png"
+              class="img_filme"
+              alt="Amigos do Bosque"
+            />
+            <h3 class="titulo_filme">Amigos do Bosque Mágico</h3>
           </a>
-        <div class="container_cat">
-          <h4 class="genero">Animação</h4>
-          <aside class="dimencao">2D</aside>
-          <h4 class="duracao">80 minutos</h4>
-          <aside class="classificacao_livre">Livre</aside>
-        </div>
+          <div class="container_cat">
+            <h4 class="genero">Animação</h4>
+            <aside class="dimencao">2D</aside>
+            <h4 class="duracao">80 minutos</h4>
+            <aside class="classificacao_livre">Livre</aside>
+          </div>
         </li>
 
         <li class="li_filmes">
           <a href="caminhoparaoabismo.html">
-          <img src="./assets/poster/caminhoParaOAbismo.png" class="img_filme" alt="Caminho para o Abismo">
-          <h3 class="titulo_filme">Caminho para o Abismo</h3>
+            <img
+              src="./assets/poster/caminhoParaOAbismo.png"
+              class="img_filme"
+              alt="Caminho para o Abismo"
+            />
+            <h3 class="titulo_filme">Caminho para o Abismo</h3>
           </a>
-        <div class="container_cat">
-          <h4 class="genero">Horror</h4>
-          <aside class="dimencao">2D</aside>
-          <h4 class="duracao">103 minutos</h4>
-          <aside class="classificacao_14">14 anos</aside>
-        </div>
+          <div class="container_cat">
+            <h4 class="genero">Horror</h4>
+            <aside class="dimencao">2D</aside>
+            <h4 class="duracao">103 minutos</h4>
+            <aside class="classificacao_14">14 anos</aside>
+          </div>
         </li>
 
         <li class="li_filmes">
           <a href="desastresdoescritorio.html">
-          <img src="./assets/poster/desastresDoEscritorio.png" class="img_filme" alt="Desastres do Escritório">
-          <h3 class="titulo_filme">Desastres do Escritório</h3>
+            <img
+              src="./assets/poster/desastresDoEscritorio.png"
+              class="img_filme"
+              alt="Desastres do Escritório"
+            />
+            <h3 class="titulo_filme">Desastres do Escritório</h3>
           </a>
-        <div class="container_cat">
-          <h4 class="genero">Comédia</h4>
-          <aside class="dimencao">2D</aside>
-          <h4 class="duracao">85 minutos</h4>
-          <aside class="classificacao_livre">Livre</aside>
-        </div>
+          <div class="container_cat">
+            <h4 class="genero">Comédia</h4>
+            <aside class="dimencao">2D</aside>
+            <h4 class="duracao">85 minutos</h4>
+            <aside class="classificacao_livre">Livre</aside>
+          </div>
         </li>
 
         <li class="li_filmes">
           <a href="mestresdofuturo.html">
-          <img src="./assets/poster/mestresDoFuturo.png" class="img_filme" alt="Mestres do Futuro">
-          <h3 class="titulo_filme">Mestres do futuro</h3>
+            <img
+              src="./assets/poster/mestresDoFuturo.png"
+              class="img_filme"
+              alt="Mestres do Futuro"
+            />
+            <h3 class="titulo_filme">Mestres do futuro</h3>
           </a>
-        <div class="container_cat">
-          <h4 class="genero">Documentário</h4>
-          <aside class="dimencao_gamb">2D</aside>
-          <h4 class="duracao">120 minutos</h4>
-          <aside class="classificacao_livre">Livre</aside>
-        </div>
+          <div class="container_cat">
+            <h4 class="genero">Documentário</h4>
+            <aside class="dimencao_gamb">2D</aside>
+            <h4 class="duracao">120 minutos</h4>
+            <aside class="classificacao_livre">Livre</aside>
+          </div>
         </li>
 
         <li class="li_filmes">
           <a href="laesperanza.html">
-          <img src="./assets/poster/laEsperanza.png" class="img_filme" alt="La Esperanza">
-          <h3 class="titulo_filme">La Esperanza</h3>
+            <img
+              src="./assets/poster/laEsperanza.png"
+              class="img_filme"
+              alt="La Esperanza"
+            />
+            <h3 class="titulo_filme">La Esperanza</h3>
           </a>
-        <div class="container_cat">
-          <h4 class="genero">Drama</h4>
-          <aside class="dimencao">2D</aside>
-          <h4 class="duracao">98 minutos</h4>
-          <aside class="classificacao_12">12 anos</aside>
-        </div>
+          <div class="container_cat">
+            <h4 class="genero">Drama</h4>
+            <aside class="dimencao">2D</aside>
+            <h4 class="duracao">98 minutos</h4>
+            <aside class="classificacao_12">12 anos</aside>
+          </div>
         </li>
 
-         <li class="li_filmes">
+        <li class="li_filmes">
           <a href="onexus.html">
-            <img src="./assets/poster/oNexusDoTempo.png" class="img_filme" alt="O Nexus do Tempo">
+            <img
+              src="./assets/poster/oNexusDoTempo.png"
+              class="img_filme"
+              alt="O Nexus do Tempo"
+            />
             <h3 class="titulo_filme">O Nexus do Tempo</h3>
           </a>
-        <div class="container_cat">
-          <h4 class="genero">Ficção Científica</h4>
-          <aside class="dimencao_3d">3D</aside>
-          <h4 class="duracao">105 minutos</h4>
-          <aside class="classificacao_10">10 anos</aside>
-        </div>
+          <div class="container_cat">
+            <h4 class="genero">Ficção Científica</h4>
+            <aside class="dimencao_3d">3D</aside>
+            <h4 class="duracao">105 minutos</h4>
+            <aside class="classificacao_10">10 anos</aside>
+          </div>
         </li>
       </ul>
     </section>
 
     <section class="combo">
-      <img src ="assets/Banner-Pipoca.png" class="combo-img" alt="Combo">
+      <img src="assets/Banner-Pipoca.png" class="combo-img" alt="Combo" />
       <div class="combo-container">
-        <h2 class="combo-container-titulo">Combo <span>Dragon's <br>Ascent</span></h2>
+        <h2 class="combo-container-titulo">
+          Combo <span>Dragon's <br />Ascent</span>
+        </h2>
       </div>
     </section>
 
-<section class="newsletter">
-  <h2 class="newsletter-titulo">Increva-se para ganhar descontos!</h2>
-  <form class="newsletter-form">
-    <input type="email" placeholder="Digite seu melhor email!" class="newsletter-input">
-    <button type="submit" class="newsletter-button">Inscrever</button>
-  </form>
-</section>
-<div class="trequinho">
-<img src="./assets/tarjeta.png" alt="Tarjeta">
-</div>
-  <footer class="footer">
+    <section class="newsletter">
+      <h2 class="newsletter-titulo">Increva-se para ganhar descontos!</h2>
+      <form class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Digite seu melhor email!"
+          class="newsletter-input"
+        />
+        <button type="submit" class="newsletter-button">Inscrever</button>
+      </form>
+    </section>
+    <div class="trequinho">
+      <img src="./assets/tarjeta.png" alt="Tarjeta" />
+    </div>
+    <footer class="footer">
+      <ul class="ul_footer">
+        <li class="footer__list">
+          <img src="./assets/Logo-white.svg" alt="Logo" class="logo_footer" />
+          <p class="logo_texto">Onde a realidade encontra</p>
+          <p class="logo_texto">a fantasia!</p>
+        </li>
+        <li class="footer__list">
+          <h3 class="footer__list-titulo">Funcionamento</h3>
+          <p class="footer__list-texto">Segunda a sexta – 16h às 00h</p>
+          <p class="footer__list-texto">ola@luzecena.com.br</p>
+          <p class="footer__list-texto">0800 541 320</p>
+        </li>
+        <li class="footer__list">
+          <h3 class="footer__list-titulo">Institucional</h3>
+          <p class="footer__list-texto"><a href="#">Sobre nós</a></p>
+          <p class="footer__list-texto"><a href="#">Para empresas</a></p>
+          <p class="footer__list-texto"><a href="#">Club fidelidade</a></p>
+        </li>
+        <li class="footer__list">
+          <h3 class="footer__list-titulo">Siga nossas redes:</h3>
+          <a href="#"
+            ><img
+              src="./assets/Whatsapp.svg"
+              alt="WhatsApp"
+              class="footer__list-icone"
+          /></a>
+          <a href="#"
+            ><img
+              src="./assets/Instagram.svg"
+              alt="Instagram"
+              class="footer__list-icone"
+          /></a>
+          <a href="#"
+            ><img
+              src="./assets/Tiktok.svg"
+              alt="TikTok"
+              class="footer__list-icone"
+          /></a>
+        </li>
+      </ul>
+    </footer>
 
-    <ul class="ul_footer">
-      <li class="footer__list">
-                <img src="./assets/Logo-white.svg" alt="Logo" class="logo_footer">
-                <p class="logo_texto">Onde a realidade encontra </p><p class="logo_texto">a fantasia!</p>
-            </li>
-      <li class="footer__list">
-                <h3 class="footer__list-titulo">Funcionamento</h3>
-                <p class="footer__list-texto">Segunda a sexta – 16h às 00h</p>
-                <p class="footer__list-texto">ola@luzecena.com.br</p>
-                <p class="footer__list-texto">0800 541 320</p>
-            </li>
-      <li class="footer__list">
-                <h3 class="footer__list-titulo">Institucional</h3>
-                <p class="footer__list-texto"><a href="#">Sobre nós</a></p>
-                <p class="footer__list-texto"><a href="#">Para empresas</a></p>
-                <p class="footer__list-texto"><a href="#">Club fidelidade</a></p>
-            </li>
-      <li class="footer__list">
-                <h3 class="footer__list-titulo">Siga nossas redes:</h3>
-                <a href="#"><img src="./assets/Whatsapp.svg" alt="WhatsApp" class="footer__list-icone"></a>
-                <a href="#"><img src="./assets/Instagram.svg" alt="Instagram" class="footer__list-icone"></a>
-                <a href="#"><img src="./assets/Tiktok.svg" alt="TikTok" class="footer__list-icone"></a>
-            </li>
-          </ul>
-
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./modal.js"></script>
-</body>
-</html>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./modal.js"></script>
+  </body>
 </html>

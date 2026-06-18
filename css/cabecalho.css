@@ -16,6 +16,7 @@
 .logo {
     width: 143px;
     height: auto;
+    order: 1;
 }
 
 .cabecalho_nav {
@@ -23,6 +24,15 @@
     gap: 40px;
     align-items: center;
     justify-content: space-between;
+    order: 2;
+}
+
+.cabecalho_search {
+    order: 3;
+}
+
+.cabecalho_actions {
+    order: 4;
 }
 
 .links {
@@ -89,13 +99,42 @@
     .cabecalho_inner {
         flex-wrap: wrap;
         gap: 16px;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        order: 1;
+        flex: 0 0 auto;
+        margin: 0 auto;
     }
 
     .cabecalho_nav {
+        order: 2;
         gap: 24px;
-        justify-content: space-between;
+        justify-content: center;
+        width: auto;
+        flex: 1 1 auto;
+    }
+
+    .cabecalho_actions {
+        order: 3;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .cabecalho_search {
+        order: 4;
         width: 100%;
+        margin-top: 1rem;
+    }
+
+    .cabecalho_search-input {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -103,7 +142,7 @@
     .cabecalho_inner {
         flex-direction: row;
         align-items: center;
-        min-height: 60px;
+        min-height: 72px;
         padding: 0.75rem 1rem;
         position: relative;
         gap: 0.75rem;
@@ -114,6 +153,10 @@
 
     .navbar-toggler {
         display: inline-flex;
+        position: absolute;
+        left: 1rem;
+        top: 30%;
+        transform: translateY(-50%);
         padding: 0.5rem 0.75rem;
         font-size: 1.25rem;
         line-height: 1;
@@ -123,7 +166,7 @@
         transition: box-shadow 0.15s ease-in-out;
         order: 1;
         margin: 0;
-        z-index: 10;
+        z-index: 20;
     }
 
     .navbar-toggler:focus {
@@ -147,16 +190,21 @@
         order: 2;
         position: absolute;
         left: 50%;
+        top: 15px;
         transform: translateX(-50%);
+        flex: 0 0 auto;
+        z-index: 15;
     }
 
     .cabecalho_actions {
+
         display: flex;
         gap: 12px;
         align-items: center;
         order: 3;
-        margin-left: auto;
-        z-index: 10;
+        margin: 0;
+        z-index: 20;
+        flex: 0 0 auto;
     }
 
     .cabecalho_actions .icon {
