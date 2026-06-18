@@ -30,6 +30,9 @@
     margin: 5px 0;
   }
 
+  .banner {
+    height: 300px;
+  }
   .banner-container {
     left: 50%;
     transform: translate(-50%, -50%);
@@ -38,11 +41,11 @@
     text-align: center;
   }
   .banner-container-titulo {
-    font-size: 36px;
-    line-height: 1.05;
+    font-size: 24px;
+    line-height: 1.2;
   }
   .banner-container-titulo span {
-    font-size: 2rem;
+    font-size: 20px;
   }
 
   .ul_local {

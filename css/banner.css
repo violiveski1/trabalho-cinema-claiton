@@ -1,12 +1,14 @@
 .banner {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 600px;
+  min-height: 400px;
 }
 
 .banner-imagem {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   display: block;
   margin: 0;
 }
@@ -17,6 +19,7 @@
   left: 23rem;
   transform: translateY(-50%);
   z-index: 1;
+  max-width: 50%;
 }
 
 .banner-container-titulo {
@@ -33,17 +36,22 @@
 }
 
 @media (max-width: 768px) {
+  .banner {
+    height: 400px;
+  }
+
   .banner-container {
     left: 50%;
-    top: 30%;
+    top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90%;
+    max-width: none;
   }
 
   .banner-container-titulo {
     font-size: 36px;
-    line-height: 1.1;
+    line-height: 1.2;
   }
 
   .banner-container-titulo span {
@@ -52,15 +60,20 @@
 }
 
 @media (max-width: 480px) {
+  .banner {
+    height: 300px;
+  }
+
   .banner-container {
-    top: 25%;
+    top: 50%;
   }
 
   .banner-container-titulo {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 1.2;
   }
 
   .banner-container-titulo span {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
